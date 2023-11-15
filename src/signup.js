@@ -28,7 +28,7 @@ export default function SignupScreen() {
           text='Register' 
           subText="Already have an account? " 
           subTextButton='Log in'
-          dest='Splash'
+          dest='Home'
           subDest='Login'
           />
       </View>

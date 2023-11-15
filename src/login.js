@@ -26,7 +26,7 @@ export default function LoginScreen() {
           text='Login' 
           subText="Don't have an account? " 
           subTextButton='Sign Up'
-          dest='Splash'
+          dest='Home'
           subDest='Signup'
           />
       </View>
