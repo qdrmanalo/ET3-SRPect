@@ -28,9 +28,13 @@ export default function HomeScreen({}) {
 
   return (
     <View style={styles.container}>
-        <HeaderSRP/>
+        <View style={styles.headerContainer}>
+          <HeaderSRP/>
+        </View>
         <View style={styles.menuContainer}>
-            <Text style={styles.titleText}>Products</Text>
+            <View style={styles.titleContainer}>
+              <Text style={styles.titleText}>Products</Text>
+            </View>
             <View style={styles.buttonsContainer}>
               <View style={styles.firstRow}>
                 <ImageButton source={require('../assets/canned.png')} subtitle='Canned Foods'/>
@@ -61,17 +65,24 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#D9D9D9',
   },
+  headerContainer: {
+    flex: 1,
+  },
   menuContainer: {
     flex: 5,
+  },
+  titleContainer:{
+    flex: 1,
+    paddingHorizontal: '5%',
+    justifyContent: 'center',
   },
   titleText: {
     color: '#000',
     fontFamily: 'Lato-Regular',
     fontSize: 22,
-    padding: '5%',
   },
   buttonsContainer: {
-    flex: 1,
+    flex: 5,
   },
   firstRow: {
     flex: 12,
