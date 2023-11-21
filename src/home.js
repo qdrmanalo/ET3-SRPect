@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   },
   titleContainer:{
     flex: 1,
-    paddingHorizontal: '5%',
+    paddingHorizontal: '7.5%',
     justifyContent: 'center',
   },
   titleText: {
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
   },
   buttonsContainer: {
-    flex: 5,
+    flex: 6,
   },
   firstRow: {
     flex: 12,
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     width: '40%',
     borderWidth: 2,
     borderRadius: 15,
-    padding: 10,
+    padding: '2%',
   },
   image: {
     resizeMode: 'cover',
@@ -106,10 +106,13 @@ const styles = StyleSheet.create({
     borderRadius: 15,
   },
   buttonText: {
+    height: '15%',
+    width: '100%',
     color: '#000',
     fontFamily: 'Manrope-Regular',
     fontSize: 18,
-    alignSelf: 'center',
+    textAlign: 'center',
+    justifyContent: 'center',
   },
   secondRow: {
     flex: 7,
@@ -130,9 +133,12 @@ const styles = StyleSheet.create({
     width: '40%',
   },
   otherText: {
+    height: '15%',
+    width: '100%',
     color: '#000',
     fontFamily: 'Manrope-Regular',
     fontSize: 20,
-    alignSelf: 'center',
+    textAlign: 'center',
+    justifyContent: 'center',
   },
 });

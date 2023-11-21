@@ -22,8 +22,6 @@ export default function SignupScreen() {
         <LabeledInputBox label='Email Address' placeholder='Enter your email'/>
         <LabeledInputBox label='Create Password' placeholder='Enter your password' hide='true'/>
         <LabeledInputBox label='Confirm Password' placeholder='Enter your password' hide='true'/>
-      </View>
-      <View style={styles.buttonContainer}>
         <SubbedButton 
           text='Register' 
           subText="Already have an account? " 
@@ -47,7 +45,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   inputContainer: {
-    flex: 3,
+    flex: 4,
   },
   buttonContainer: {
     flex: 2,

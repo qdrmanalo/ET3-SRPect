@@ -33,7 +33,8 @@ export default function SubbedButton(props) {
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    flex: 1,
+    height: 90,
+    padding: 10,
     alignItems: 'center',
   },
   button: {
