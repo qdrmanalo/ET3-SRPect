@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     color: '#FFF',
-    fontFamily: 'Poppins-BlackItalic',
+    fontFamily: 'Poppins-BlackItalic', 
     fontSize: 50,
   },
 });
