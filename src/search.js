@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, FlatList} from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, FlatList } from 'react-native';
 import HeaderSRP from '../components/headerSRP';
 import { FontAwesome, Entypo } from '@expo/vector-icons';
 
@@ -10,6 +10,17 @@ export default function SearchScreen() {
   const onFocus = () => setFocused(true);
   const cancelInput = () => setFocused(false);
   const clearSearch = () => setSearch('')
+
+  // Test Serch List
+  const [list, setList] = useState([
+    createImageMessage('http://unsplash.it/500/500'),
+    createTextMessage('World'),
+    createTextMessage('Hello'),
+    createLocationMessage({
+      latitude: 37.78825,
+      longitude: -122.4324,
+    }),
+  ]);
   
   return (
     <View style={styles.container}>
@@ -44,7 +55,7 @@ export default function SearchScreen() {
           )}
         </View>
         <View style={styles.listContainer}>
-          <FlatList/>
+          <FlatList />
         </View>
       </View>
     </View>
@@ -72,6 +83,7 @@ const styles = StyleSheet.create({
   searchBar__tapped: {
     height: 25,
     width: "80%",
+    borderRadius: 10,
     paddingLeft: 5,
     flexDirection: "row",
     backgroundColor: "#fff",
@@ -81,6 +93,7 @@ const styles = StyleSheet.create({
     height: 25,
     width: "95%",
     paddingLeft: 5,
+    borderRadius: 10,
     flexDirection: "row",
     backgroundColor: "#fff",
     alignItems: "center",
